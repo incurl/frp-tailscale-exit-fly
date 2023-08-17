@@ -1,12 +1,12 @@
-ARG TS_VERSION=1.46.1
+ARG TS_VERSION=1.48.0
 ARG TS_FILE=tailscale_${TS_VERSION}_amd64.tgz
 
 FROM alpine:latest as tailscale
 ARG TS_FILE
 WORKDIR /app
 
-RUN wget https://pkgs.tailscale.com/stable/${TSFILE} && \
-  tar xzf ${TSFILE} --strip-components=1
+RUN wget https://pkgs.tailscale.com/stable/${TS_FILE} && \
+  tar xzf ${TS_FILE} --strip-components=1
 COPY . ./
 
 
