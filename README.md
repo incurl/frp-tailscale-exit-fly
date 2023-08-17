@@ -1,4 +1,4 @@
-# frp on fly.io
+# frp & tailscale exit on fly.io
 [Fast reverse proxy](https://github.com/fatedier/frp) on [fly.io](https://fly.io)
 
 Run your own frp tunnel for free (within free tier) on fly.io
